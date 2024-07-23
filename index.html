@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Box</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/71dac4e3f9.js" crossorigin="anonymous"></script>
+</head>
+<body class="h-screen w-full flex items-center justify-center">
+    <div class="h-[400px] w-[600px] border-4 border-[#f74b00] gradient rounded-xl p-3">
+        <div class="h-1/4 w-full flex items-center justify-center"><i class="fa-solid fa-user text-[40px] rounded-full p-4 bg-[#f74b00]"></i></div>
+        <h1 class="w-full p-2 text-center font-bold text-[25px]">Ask Your Question</h1><br>
+        <input id="inputs" type="text" class="p-5 bg-[#ffb76b] w-full h-[70px] rounded-xl outline-none text-black" placeholder="" required>
+        <div class="w-full p-4 flex items-center justify-center gap-3">
+            <button class="pl-4 pr-4 pt-2 pb-2 rounded-xl font-semibold text-white bg-[#fe8e22]" onclick="accept()">Accept</button>
+            <button class="pl-4 pr-4 pt-2 pb-2 rounded-xl font-semibold text-white bg-[#fe8e22]" onclick="decline()">Decline</button>
+        </div>
+    </div>
+    
+    <script src="./js/index.js"></script>
+</body>
+</html>
